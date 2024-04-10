@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="weather.css">
+    <script language="javascript" src="weather.js"></script>
+</head>
+
+<body>
+    <div class="bg-container d-flex flex-column justify-content-center">
+        <center>
+            <div class="bg">
+                <center><input id="searchInput" type="search" placeholder="Search Your City"></center>
+
+                <div class="spinner-border m-5 d-none" id="spinner" role="status">
+
+                </div>
+
+                <div id="container">
+                    <center><img class="img" id="image" src="https://cdn4.iconfinder.com/data/icons/thanksgiving-2020-flat-2/64/thanksgiving-76-64.png"></center>
+                    <p class="p" id="temp">0°C</p>
+                    <p class="p1" id="description">Broken Clouds</p>
+                    <div class="d-flex flex-row">
+
+                        <div class="d-flex flex-row pr-3">
+                            <img src="https://cdn0.iconfinder.com/data/icons/autumn-doodles/32/thermometer-autumn-humidity-fall-rain-temperature-measure-64.png">
+                            <div class="pt-2">
+                                <span id="humidity">0%</span><br><span>Humidity</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row pl-3">
+                            <img src="https://cdn1.iconfinder.com/data/icons/weather-471/128/WIND-64.png">
+                            <div class="pt-2">
+                                <span id="wind">0 KMPH</span><br><span>Wind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="errorMsg" class="d-none">
+                    <img class="error-msg" src="https://cdn2.iconfinder.com/data/icons/visual-empty-state/32/No_Data_Found_Not_Found_Lost_Searching_Search-64.png">
+                    <h1 class="error">Oops!!!</h1>
+                    <p class="errorp">Data Not Found</p>
+                </div>
+            </div>
+        </center>
+
+    </div>
+
+</body>
+
+</html>
